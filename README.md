@@ -2,16 +2,19 @@
 
 A static MapleSEA boss reference generated from the curated guide data and media in the [Kanade bot project](https://github.com/hoshinoht/kanade-bot).
 
+[Read the Boss Guide](https://bosses.hoshinoht.dev/)
+
 ## Build and preview
 
 Run from the Kanade bot checkout with Bun 1.4.4. This snapshot was generated from [Kanade bot revision `f9e1893`](https://github.com/hoshinoht/kanade-bot/tree/f9e189383bb017c8ba0ab1f019b151b558d2740b). Extract [the exporter source](exporter-source.zip) at the root of that checkout and use a new output directory each time.
 
 ```sh
+(cd web && bun install --frozen-lockfile)
 bun --no-env-file scripts/boss_guide/build.ts /tmp/kanade-boss-guide
 python3 -m http.server 4175 --bind 127.0.0.1 --directory /tmp/kanade-boss-guide
 ```
 
-The exporter reads the boss catalog and knowledge YAML and copies the matching PNGs and processed MP4s from the curated art directories. The output contains pre-rendered HTML, a shared stylesheet, and local media. Update the guides and artwork in the bot checkout, then rebuild.
+The exporter reads the boss catalog and knowledge YAML and copies the matching PNGs and processed MP4s from the curated art directories. The output contains pre-rendered boss and difficulty pages, one Hoshino light stylesheet, and local media and fonts. Update the guides and artwork in the bot checkout, then rebuild.
 
 ## GitHub Pages
 

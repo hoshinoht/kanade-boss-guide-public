@@ -4,47 +4,111 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Four phases of curse management: never take white and black hits within 6 s, solve the full-map checks by position, then hold the right Phase 4 colour.">
-  <title>Black Mage · Kanade Boss Guide</title>
+  <title>Black Mage · Hard · Kanade Boss Guide</title>
   <link rel="stylesheet" href="../guide.css">
 </head>
 <body>
-  <header class="masthead"><a href="../">Kanade Boss Guide</a></header>
-  <main><article>
-  <div class="hero">
-    <div><h1>Black Mage</h1><p class="guide-lead">Four phases of curse management: never take white and black hits within 6 s, solve the full-map checks by position, then hold the right Phase 4 colour.</p></div>
-    <img src="../assets/bm-entry.png" alt="Black Mage">
-  </div>
-  <nav aria-label="On this page"><ul class="pills"><li><a href="#overview">Overview</a></li><li><a href="#difficulties">Difficulties</a></li><li><a href="#phases">Phases</a></li><li><a href="#strategies">Strategies</a></li><li><a href="#notes">Notes</a></li><li><a href="#sources">Sources</a></li></ul></nav>
-  <section id="overview"><h2>Overview</h2><div class="guide-card"><h3>Curses · 6 s each</h3><dl class="ledger"><div><dt>Creation (white): heal-over-time, burning aura</dt><dd>↓ −10% damage</dd></div><div><dt>Destruction (black): +15% damage taken, no potions</dt><dd>↑ +10% damage</dd></div><div><dt>Opposite curse while one is active</dt><dd>↓ −1 life · +50% HP hit</dd></div></dl><p>Crossing curses also seals skills for 5 s.</p></div><div class="guide-card"><h3>P2 full-map lasers</h3><ul class="bands"><li data-tone="red" style="flex-grow:1"><strong>Far left</strong><small>left hand · red</small></li><li data-tone="neutral" style="flex-grow:1"><strong>Under him</strong><small>both hands</small></li><li data-tone="blue" style="flex-grow:1"><strong>Far right</strong><small>right hand · purple</small></li></ul><p>Watch his touch knockback under him.</p></div><div class="guide-card"><h3>Arcane Force</h3><dl class="ledger"><div><dt>Entry</dt><dd>1320</dd></div><div><dt>+10% final damage</dt><dd>↑ 1452</dd></div><div><dt>+30% final damage</dt><dd>↑ 1716</dd></div><div><dt>+50% final damage</dt><dd>↑ 1980</dd></div></dl></div><ul class="guide-rows"><li><strong>Two curses</strong> Hits apply white Creation or black Destruction for 6 s; taking the other while one is active costs a life.</li><li><strong>Origin binds only</strong> From Phase 2, only Origin skills bind him; normal binds still work on the Phase 1 knights.</li></ul>
-      <h3>Danger</h3><ul class="guide-rows"><li><strong>Curse crossing</strong> Costs a life without dying; the main way runs fail.</li><li><strong>Instant kills</strong> Misplaced in a full-map attack or wall spawn means death. Red Lightning is near-lethal, lethal under Destruction.</li><li><strong>Hidden hand</strong> A Phase 2 Origin bind can hide the hand charging the full-map lasers; know the timer.</li><li><strong>Phase 3 chains</strong> Push, pull and lasers chain curses; stop attacking at pink lasers, no double-jumps near him.</li><li><strong>Phase 4 drains</strong> Bullets and explosions take most lives, and nobody sees your mistakes.</li></ul><h3>Tips</h3><ul class="guide-rows"><li><strong>Check your curse</strong> Before any intentional hit.</li><li><strong>Knights overlap</strong> Phase 1: bind and burst on overlap; their dive makes them briefly untargetable.</li><li><strong>Default to Destruction</strong> Phase 4 Black State: immune to black attacks, and hits give Creation, so potions still work. Swap only for pillars.</li><li><strong>Break the Egg</strong> Basic-attack the Egg of the Beginning for rewards; the clear counts on the final kill.</li></ul></section>
-<section id="difficulties"><h2>Difficulties</h2><ul class="pills"><li><a href="#hard">Hard</a></li><li><a href="#extreme">Extreme</a></li><li><a href="#champion">Champion</a></li></ul><section class="difficulty" id="hard">
-  <h3>Hard</h3>
+  <a class="skip" href="#guide">Skip to guide</a>
+  <header class="page-line"><a href="../">Bosses</a> <span><b>13</b> bosses · <b>43</b> difficulties</span></header>
+  <main class="window" aria-label="Kanade Boss Guide">
+    <div class="window-bar"><strong>The in-game list</strong><span>Level order</span></div>
+    <div class="window-body window-body--detail">
+      <nav class="catalog" aria-label="Boss catalog">
+
+      <ul><li><a href="../lotus/">
+        <img class="portrait" src="../assets/lotus-icon.png" alt="" width="34" height="34">
+        <span><strong>Lotus</strong><small class="mono">Lv. 260</small></span>
+
+      </a></li>
+<li><a href="../seren/">
+        <img class="portrait" src="../assets/seren-icon.png" alt="" width="34" height="34">
+        <span><strong>Chosen Seren</strong><small class="mono">Lv. 260</small></span>
+
+      </a></li>
+<li><a href="../kalos/">
+        <img class="portrait" src="../assets/kalos-icon.png" alt="" width="34" height="34">
+        <span><strong>Gatekeeper Kalos</strong><small class="mono">Lv. 265</small></span>
+
+      </a></li>
+<li><a href="../fa/">
+        <img class="portrait" src="../assets/fa-icon.png" alt="" width="34" height="34">
+        <span><strong>The First Adversary</strong><small class="mono">Lv. 270</small></span>
+
+      </a></li>
+<li><a href="../carling/">
+        <img class="portrait" src="../assets/carling-icon.png" alt="" width="34" height="34">
+        <span><strong>Karling</strong><small class="mono">Lv. 275</small></span>
+
+      </a></li>
+<li><a href="../bm/" aria-current="true">
+        <img class="portrait" src="../assets/bm-icon.png" alt="" width="34" height="34">
+        <span><strong>Black Mage</strong><small class="mono">Lv. 275</small></span>
+
+      </a></li>
+<li><a href="../maleficstar/">
+        <img class="portrait" src="../assets/maleficstar-icon.png" alt="" width="34" height="34">
+        <span><strong>Radiant Malefic Star</strong><small class="mono">Lv. 280</small></span>
+
+      </a></li>
+<li><a href="../bellona/">
+        <img class="portrait" src="../assets/bellona-icon.png" alt="" width="34" height="34">
+        <span><strong>Bellona</strong><small class="mono">Lv. 280</small></span>
+
+      </a></li>
+<li><a href="../limbo/">
+        <img class="portrait" src="../assets/limbo-icon.png" alt="" width="34" height="34">
+        <span><strong>Limbo</strong><small class="mono">Lv. 285</small></span>
+
+      </a></li>
+<li><a href="../baldrix/">
+        <img class="portrait" src="../assets/baldrix-icon.png" alt="" width="34" height="34">
+        <span><strong>Baldrix</strong><small class="mono">Lv. 290</small></span>
+
+      </a></li>
+<li><a href="../jupiter/">
+        <img class="portrait" src="../assets/jupiter-icon.png" alt="" width="34" height="34">
+        <span><strong>Jupiter</strong><small class="mono">Lv. 295</small></span>
+
+      </a></li></ul>
+<h2 class="cap">Event bosses</h2>
+      <ul><li><a href="../kai/">
+        <img class="portrait" src="../assets/kai-icon.png" alt="" width="34" height="34">
+        <span><strong>Kai</strong></span>
+        <span class="catalog-chip">Seasonal boss</span>
+      </a></li>
+<li><a href="../meilin/">
+        <img class="portrait" src="../assets/meilin-icon.png" alt="" width="34" height="34">
+        <span><strong>Meilin</strong></span>
+        <span class="catalog-chip">Seasonal boss</span>
+      </a></li></ul>
+  </nav>
+      <article id="guide" tabindex="-1">
+  <a class="catalog-back" href="../">← Back to the catalog</a>
+  <header class="hero">
+    <img class="hero-art" src="../assets/bm-entry.png" alt="">
+    <div class="hero-identity">
+      <img class="portrait" src="../assets/bm-portrait.png" alt="" width="72" height="72">
+      <div><p class="cap">Checked-in boss knowledge</p><h1>Black Mage</h1>
+        <p class="hero-meta">Researched <time datetime="2026-11-10">2026-11-10</time> · Lv. 275</p></div>
+
+    </div>
+  </header>
+  <div class="guide-layout">
+    <div class="guide-content">
+      <nav id="difficulties" class="difficulty-switch" aria-label="Difficulty"><span class="cap">Difficulty</span><ul><li><a href="../bm/" aria-current="page">Hard</a></li><li><a href="../bm/extreme/">Extreme</a></li><li><a href="../bm/champion/">Champion</a></li></ul></nav>
+      <p class="guide-lead">Four phases of curse management: never take white and black hits within 6 s, solve the full-map checks by position, then hold the right Phase 4 colour.</p>
+
+      <section class="difficulty" id="facts" aria-label="Hard facts">
 
   <dl class="guide-tiles"><div><dt>Boss level</dt><dd>275<small>entry 255</small></dd></div><div><dt>Defence (PDR)</dt><dd>300%</dd></div><div><dt>Arcane Force</dt><dd>1320</dd></div><div><dt>Party</dt><dd>Up to 6</dd></div><div><dt>Recommended</dt><dd>≈ 45k<small>KMS, Aug 2024</small></dd></div></dl>
-  <details class="guide-card"><summary>HP by phase · <abbr title="166 trillion">166t</abbr> total</summary>
+  <details class="guide-hp" id="hp"><summary><span class="cap">HP</span> <span class="mono"><abbr title="166 trillion">166t</abbr> total</span></summary>
     <dl class="ledger"><div><dt>Phase 1</dt><dd><abbr title="22.1 trillion">22.1t</abbr></dd></div><div><dt>Phase 2</dt><dd><abbr title="40.5 trillion">40.5t</abbr></dd></div><div><dt>Phase 3</dt><dd><abbr title="55.3 trillion">55.3t</abbr></dd></div><div><dt>Phase 4</dt><dd><abbr title="47.9 trillion">47.9t</abbr></dd></div></dl></details>
-  <p>KMS solo minimum-cut clears around 45k (Aug 2024, before OVERDRIVE).</p>
   <ul class="guide-rows"><li>Phase 1 HP is one bar shared by both knights, plus white shields. 12 lives per player, 20-minute limit. Boss level 265 in phases 1 and 4.</li></ul>
-</section><section class="difficulty" id="extreme">
-  <h3>Extreme</h3>
-
-  <dl class="guide-tiles"><div><dt>Boss level</dt><dd>280<small>entry 255</small></dd></div><div><dt>Defence (PDR)</dt><dd>300%</dd></div><div><dt>Arcane Force</dt><dd>1320</dd></div><div><dt>Party</dt><dd>Up to 6</dd></div><div><dt>Recommended</dt><dd>96–110k<small>KMS, Sep 2025</small></dd></div></dl>
-  <details class="guide-card"><summary>HP by phase · <abbr title="3.26 quadrillion">3.26q</abbr> total</summary>
-    <dl class="ledger"><div><dt>Phase 1</dt><dd><abbr title="799 trillion">799t</abbr></dd></div><div><dt>Phase 2</dt><dd><abbr title="806 trillion">806t</abbr></dd></div><div><dt>Phase 3</dt><dd><abbr title="870 trillion">870t</abbr></dd></div><div><dt>Phase 4</dt><dd><abbr title="782 trillion">782t</abbr></dd></div></dl></details>
-  <p>KMS solo clears reported around 96k (minimum cut, 99% of HP) to 110k (Sep 2025), before OVERDRIVE; single clears, not a cut table.</p>
-  <ul class="guide-rows"><li><strong>Extreme</strong> Every 30 s, after a warning, your Phase 4 state is set at random (it may stay the same).</li><li>12 lives per player, 20-minute limit. Boss level 275 in Phase 1.</li></ul>
-</section><section class="difficulty" id="champion">
-  <h3>Champion</h3>
-  <div class="guide-card"><h4>Union Champion · Rank S trial</h4>
-
-    <p>A Rank A champion</p><ul class="guide-rows"><li>Solo</li><li>20-minute limit</li><li>Practice Mode clears count</li></ul>
-    <ul class="pills"><li><a href="../lotus/#champion">B · Lotus</a></li><li><strong>S · Black Mage</strong></li><li><a href="../seren/#champion">SS · Chosen Seren</a></li><li><a href="../kalos/#champion">SSS · Gatekeeper Kalos</a></li></ul></div>
-  <dl class="guide-tiles"><div><dt>Boss level</dt><dd>260<small>entry 260</small></dd></div><div><dt>Party</dt><dd>Solo</dd></div></dl>
-
-
-  <ul class="guide-rows"><li><strong>S insignia</strong> +5% Boss Damage for every character. Hard Black Mage solo in Champion Mode (Champion Evaluation Match).</li><li><strong>Practice Mode</strong> Clears count and add Hamcelot's Protection: 25% less damage taken.</li><li><strong>Hamcelot's Trial</strong> Final Damage −25% in this Champion trial.</li><li><strong>5th champion slot</strong> In KMS it needs four Rank S champions, i.e. four Hard Black Mage solos.</li></ul>
-</section></section>
-<section id="phases"><h2>Phases</h2><div class="phase-run">
+</section>
+      <nav class="section-links" aria-label="Guide sections"><ul class="pills"><li><a href="#overview">Overview</a></li><li><a href="#phases">Phases <span class="pill-count">4</span></a></li><li><a href="#strategies">Strategies <span class="pill-count">4</span></a></li><li><a href="#notes">Notes <span class="pill-count">3</span></a></li><li><a href="#sources">Sources <span class="pill-count">11</span></a></li></ul></nav>
+      <section class="guide-section" id="overview"><h2>Overview</h2><div class="guide-card"><h3>Curses · 6 s each</h3><dl class="ledger"><div><dt>Creation (white): heal-over-time, burning aura</dt><dd>↓ −10% damage</dd></div><div><dt>Destruction (black): +15% damage taken, no potions</dt><dd>↑ +10% damage</dd></div><div><dt>Opposite curse while one is active</dt><dd>↓ −1 life · +50% HP hit</dd></div></dl><p>Crossing curses also seals skills for 5 s.</p></div><div class="guide-card"><h3>P2 full-map lasers</h3><ul class="bands"><li data-tone="red" style="flex-grow:1"><strong>Far left</strong><small>left hand · red</small></li><li data-tone="neutral" style="flex-grow:1"><strong>Under him</strong><small>both hands</small></li><li data-tone="blue" style="flex-grow:1"><strong>Far right</strong><small>right hand · purple</small></li></ul><p>Watch his touch knockback under him.</p></div><div class="guide-card"><h3>Arcane Force</h3><dl class="ledger"><div><dt>Entry</dt><dd>1320</dd></div><div><dt>+10% final damage</dt><dd>↑ 1452</dd></div><div><dt>+30% final damage</dt><dd>↑ 1716</dd></div><div><dt>+50% final damage</dt><dd>↑ 1980</dd></div></dl></div><ul class="guide-rows"><li><strong>Two curses</strong> Hits apply white Creation or black Destruction for 6 s; taking the other while one is active costs a life.</li><li><strong>Origin binds only</strong> From Phase 2, only Origin skills bind him; normal binds still work on the Phase 1 knights.</li></ul>
+      <h3>Danger</h3><ul class="guide-rows"><li><strong>Curse crossing</strong> Costs a life without dying; the main way runs fail.</li><li><strong>Instant kills</strong> Misplaced in a full-map attack or wall spawn means death. Red Lightning is near-lethal, lethal under Destruction.</li><li><strong>Hidden hand</strong> A Phase 2 Origin bind can hide the hand charging the full-map lasers; know the timer.</li><li><strong>Phase 3 chains</strong> Push, pull and lasers chain curses; stop attacking at pink lasers, no double-jumps near him.</li><li><strong>Phase 4 drains</strong> Bullets and explosions take most lives, and nobody sees your mistakes.</li></ul><h3>Tips</h3><ul class="guide-rows"><li><strong>Check your curse</strong> Before any intentional hit.</li><li><strong>Knights overlap</strong> Phase 1: bind and burst on overlap; their dive makes them briefly untargetable.</li><li><strong>Default to Destruction</strong> Phase 4 Black State: immune to black attacks, and hits give Creation, so potions still work. Swap only for pillars.</li><li><strong>Break the Egg</strong> Basic-attack the Egg of the Beginning for rewards; the clear counts on the final kill.</li></ul></section>
+<section class="guide-section" id="phases"><h2>Phases</h2><div class="phase-run">
 
       <details class="guide-card" data-tone="" open><summary>Phase 1 <small>two knights</small></summary><ul class="guide-rows"><li><strong>Two knights</strong> Aion of Creation (white) and Yaldabaoth of Destruction (black) share one HP bar.</li><li><strong>Closing walls</strong> They close in from the edges and spawning on you is lethal; avoid corners.</li><li><strong>Red Lightning</strong> Cages you for 15 s.</li><li><strong>Knights overlap</strong> Bind and burst when both overlap; their dive makes them briefly untargetable.</li></ul></details></div><div class="phase-run">
 
@@ -53,7 +117,7 @@
       <details class="guide-card" data-tone="" open><summary>Phase 3 <small>shield bubble</small></summary><ul class="guide-rows"><li><strong>Shield bubble</strong> Stay inside it; outside you deal half damage.</li><li><strong>Ultimates</strong> White snowfall: under a platform. Floor vortex: on one, ideally the farthest.</li><li><strong>Push</strong> Crouch to avoid it.</li><li><strong>Chains</strong> Push, pull and lasers chain curses; stop attacking at pink lasers and don't double-jump near him.</li></ul></details></div><div class="phase-run">
 
       <details class="guide-card" data-tone="" open><summary>Phase 4 <small>pick a state</small></summary><ul class="guide-rows"><li><strong>Hidden party</strong> Party members are hidden.</li><li><strong>Pick a state</strong> Black (Destruction): hits give Creation, safer and slower. White (Creation): hits give Destruction, faster and riskier. Harvest key swaps.</li><li><strong>Pillar check</strong> Every 30 s, wrong colour dies; then he regains a barrier.</li><li><strong>Bullets and explosions</strong> They take most lives here, and nobody can see your mistakes.</li><li><strong>Burst on the barrier</strong> Buff ~3 s before a pillar check and burst on the fresh barrier; between bursts, just survive.</li></ul></details></div></section>
-<section id="strategies"><h2>Strategies</h2><div class="guide-card"><h3>P4 burst only</h3>
+<section class="guide-section" id="strategies"><h2>Strategies</h2><div class="guide-card"><h3>P4 burst only</h3>
       <small>Low risk · Medium damage requirement</small>
       <p>Ordinary Hard with enough damage to clear within 20 minutes using bursts alone</p><ol><li>Between bursts, sustained damage is less productive because the barrier refills after each 30s pillar check, so you may stop attacking to survive; this is a survival choice, not a rule.</li><li>Start buffs about 3s before a pillar check and burst on the fresh barrier.</li><li>Four pillar checks are roughly one 2-minute burst cycle; between bursts, just survive.</li></ol><p><strong>Payoff</strong> Damage lands on fresh barriers while the rest of the phase is spent surviving</p></div><div class="guide-card"><h3>P2 laser iframe</h3>
       <small>Low risk · Medium damage requirement</small>
@@ -62,10 +126,19 @@
       <p>Phase 4, for a safer clear</p><ol><li>Pick Destruction (Black) State with the Harvest key as Phase 4 starts.</li><li>Dodge white attacks; a hit gives Creation (heal-over-time, -10% damage), so potions stay usable.</li><li>Swap only for pillar checks, then return to Black; check your current curse before any swap.</li><li>On Extreme the game sets your state at random every 30s, so Black cannot simply be held there.</li></ol><p><strong>Payoff</strong> Hits give only the Creation curse, so healing and potions stay available and mistakes are punished less; its -10% damage makes the phase slower.</p></div><div class="guide-card"><h3>P4 white: more damage</h3>
       <small>High risk · Medium damage requirement</small>
       <p>Phase 4, for a faster clear when you can dodge cleanly</p><ol><li>Pick Creation (White) State with the Harvest key as Phase 4 starts.</li><li>Dodge black attacks; a hit gives Destruction (+10% damage, +15% damage taken, no potions).</li><li>Swap only for pillar checks, then return to White; check your current curse before any swap.</li><li>The +10% figure is the KMS/GMS value; on Extreme the state is set at random every 30s.</li></ol><p><strong>Payoff</strong> Can be faster, but the damage bonus only comes from taking a hit for the Destruction curse, which also blocks potions and adds 15% damage taken.</p></div></section>
-<section id="notes"><h2>Notes</h2><ul class="guide-rows"><li><strong>Monthly clear</strong> Hard and Extreme share one clear per month.</li><li><strong>MapleSEA changes</strong> v244 stopped the Phase 3 ultimate overlapping absorption, v246 dropped the entry item, v249 cut two Phase 2-3 patterns.</li><li><strong>HP estimates</strong> Overdrive HP is estimated from the published KMS reductions.</li></ul></section>
-<section id="sources"><h2>Sources</h2><p>Research checked <time datetime="2026-11-10">2026-11-10</time>.</p>
+<section class="guide-section" id="notes"><h2>Notes</h2><ul class="guide-rows"><li><strong>Monthly clear</strong> Hard and Extreme share one clear per month.</li><li><strong>MapleSEA changes</strong> v244 stopped the Phase 3 ultimate overlapping absorption, v246 dropped the entry item, v249 cut two Phase 2-3 patterns.</li><li><strong>HP estimates</strong> Overdrive HP is estimated from the published KMS reductions.</li></ul><p><strong>Recommended · Hard</strong> KMS solo minimum-cut clears around 45k (Aug 2024, before OVERDRIVE).</p></section>
+<section class="guide-section" id="sources"><h2>Sources</h2><p>Research checked <time datetime="2026-11-10">2026-11-10</time>.</p>
       <ul class="guide-rows"><li><a href="https://maplestorywiki.net/w/Black_Mage/Monster">MapleStory Wiki - Black Mage/Monster</a><small>MapleStory Wiki contributors · wiki</small></li><li><a href="https://www.maplesea.com/updates/view/v221_patch_notes_2/">MapleSEA v221 patch notes 2</a><small>Nexon SEA · official</small></li><li><a href="https://www.maplesea.com/updates/view/v214_patch_notes">MapleSEA v214 patch notes</a><small>Nexon SEA · official</small></li><li><a href="https://www.maplesea.com/updates/view/v249_Patch_IBF/">MapleSEA v249 patch notes</a><small>Nexon SEA · official</small></li><li><a href="https://maplestory.nexon.com/news/update/806">KMS 1.2.416 OVERDRIVE patch notes</a><small>Nexon Korea · official</small></li><li><a href="https://www.digitaltq.com/maplestory-black-mage-guide">DigitalTQ - MapleStory Black Mage guide</a><small>Aleph (DigitalTQ) · guide</small></li><li><a href="https://www.inven.co.kr/board/maple/2304/32487">Inven - Black Mage solo guide</a><small>Inven community · guide</small></li><li><a href="https://dexless.com/guides/black-mage-boss-guide-and-genesis-weapons.366/">Dexless - Black Mage boss guide and Genesis weapons</a><small>PirateIzzy (Dexless) · guide</small></li><li><a href="https://mapletools.app/bosses/blackmage">MapleTools - Black Mage</a><small>MapleTools · tool</small></li><li><a href="https://www.maplesea.com/updates/view/v243_Patch_Notes/">MapleSEA v243 NEXT II patch notes (Union Champion)</a><small>Nexon SEA · official</small></li><li><a href="https://maplestory.nexon.com/Guide/N23GameInformation/Articles/409">KMS official guide - Union Champion</a><small>Nexon Korea · official</small></li></ul></section>
-</article></main>
+
+    </div>
+    <aside><nav class="toc" aria-label="On this page"><h2 class="cap">On this page</h2>
+      <ul><li><a href="#facts">Facts</a></li><li><a href="#hp">HP</a></li></ul>
+      <h3 class="cap">Guide</h3><ul><li><a href="#overview">Overview</a></li><li><a href="#phases">Phases</a></li><li><a href="#strategies">Strategies</a></li><li><a href="#notes">Notes</a></li><li><a href="#sources">Sources</a></li></ul>
+    </nav></aside>
+  </div>
+</article>
+    </div>
+  </main>
   <footer>Part of the <a href="https://github.com/hoshinoht/kanade-bot">Kanade project</a>.</footer>
 </body>
 </html>
