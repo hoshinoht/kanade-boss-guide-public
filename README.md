@@ -14,7 +14,7 @@ bun --no-env-file scripts/boss_guide/build.ts /tmp/kanade-boss-guide
 python3 -m http.server 4175 --bind 127.0.0.1 --directory /tmp/kanade-boss-guide
 ```
 
-The exporter reads the boss catalog and knowledge YAML and copies the matching PNGs and processed MP4s from the curated art directories. The output contains pre-rendered boss and difficulty pages, one Hoshino light stylesheet, and local media and fonts. Update the guides and artwork in the bot checkout, then rebuild.
+The exporter reads the boss catalog and knowledge YAML and copies the matching PNGs and processed MP4s from the curated art directories. Sass compiles Kanade’s shared styles into one Hoshino light stylesheet. The pre-rendered pages use a local script for guide tabs, phase selection, strategy steps, and the compact hero. Update the guides and artwork in the bot checkout, then rebuild.
 
 ## GitHub Pages
 
